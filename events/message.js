@@ -1,4 +1,4 @@
-const config = require('../ayarlarım.js');
+const config = require('../onemli.js');
 module.exports = message => {
   let client = message.client;
   if (message.author.bot) return;
