@@ -8,7 +8,6 @@ exports.config = {
 }
 module.exports.run = async(client,message,args) => {
     const embed = new Discord.MessageEmbed().setColor('#2F3136')
-    if(message.author.id!=="758079799041196113") return message.channel.send(':x:')
     const notno = db.fetch(`notno.${veri.sunucuid}`)+1;
     const not = args.slice(0).join(" ")
     if(!not) return message.channel.send("Bir not girmelisin")
